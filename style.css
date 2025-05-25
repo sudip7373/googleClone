@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('./fonts/Noto_Sans\,Open_Sans\,Poppins/Poppins');
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+     background-color: #202124;
+}
+
+nav.navbar{
+    background-color: #202124;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end; /* align everything to right side x axis*/
+    align-items: center;
+    font-size: 13px;
+}
+nav.navbar a{
+    text-decoration: none;
+}
+nav.navbar a:hover{
+    text-decoration: underline;
+}
+.navItemsMargin{
+    margin-right: 1.2em;
+}
+.navCursor{
+    cursor: pointer;
+}
+#signInButton{
+    background-color: #a0e4f3;
+    padding: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 1em;
+    color: hsl(300, 1%, 17%);
+    align-items: center;
+}
+
+/* main styling */
+.mainBody{
+    height: 79vh;
+    width: 100vw;
+    /* border: 2px solid red; */
+}
+.mainBody .googleLogoContainer{
+    font-family: poppins;
+    background-color: #202124;
+    height: 32%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* aling on x axix */
+    align-items: end; /* aling on y axix */
+}
+.googleLogoContainer h3{
+    font-size: 5.5em;
+    font-weight: 500;
+}
+.googleInputContainer{
+    height: 13%;
+    width: 100vw;
+    background-color: #202124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .6em;
+    margin-top: 1em;
+}
+.googleInputContainer input{
+    height: 95%;
+    width: 25%;
+    border: none;
+    background-color: #4D5156;
+}
+.inputButtonsize{
+    height: 95%;
+    width: 4%;
+    background-color: #4D5156;
+    padding: .2em;
+}
+.googleInputContainer .cursorPointer{
+    cursor: pointer;
+}
+#searchIcon{
+    border: none;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+#micIcon{
+    border: none;
+    padding-left: 3em;
+}
+#lenseIcon{
+    border: none;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+.googleButtonContainer{
+    height: 20%;
+    width: 100%;
+    background-color: #202124;
+    margin-top: .4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upSide{
+    height: 40%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnSimilarProp{
+    background-color: #303134;
+    border: none;
+    margin: .3em;
+    font-size: .9em;
+    border-radius: .4em;
+    cursor: pointer;
+    padding: .7em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+.btnSimilarProp:hover{
+    border: 1px solid #4D5156;
+}
+.downSide{
+    height: 30%;
+    width: 100%;
+    background-color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .4em;
+}
+.downSide a,small{
+    color: #99C3FF;
+    margin-left: .2em;
+}
+.downSide p .textColor{
+    color: white;
+}
+.downSide a{
+    text-decoration: none;
+    color: hsla(215, 70%, 63%, 0.44);
+}
+.downSide a:hover{
+    text-decoration: underline;
+}
+footer{
+    height: 13vh;
+    /* background-color: red; */
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .footerTop{
+    height: 50%;
+    width: 100%;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+}
+.footerTop p{
+    margin-left: 2.1em;
+}
+footer .footerBottom{
+    height: 50%;
+    width: 100%;
+    font-size: .9em;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.8px solid #202124;
+    border-left: none;
+    border-right: none;
+}
+.footerBotthomleft{
+    height: 100%;
+    width: 50%;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+}
+.footerBotthomleft a{
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 2.1em;
+}
+.footerBotthomRight{
+    height: 100%;
+    width: 50%;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footerBotthomRight a{
+    text-decoration: none;
+    margin-right: 2.1em;
+}
